@@ -8,6 +8,9 @@ import java.util.List;
 import static util.Dish.menu;
 import static java.util.stream.Collectors.toList;
 
+/**
+ * 5.1 筛选和切片
+ */
 public class Filtering {
 
     public static void main(String... args) {

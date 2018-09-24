@@ -18,7 +18,7 @@ public class Concept {
      *
      * .map(String::length) 给每个元素应用函数
      *
-     * 流的扁平化（string[] 流 扁平化为 string 流）
+     *
      * 给定单词列表
      * ["Hello","World"]，你想要返回列表["H","e","l", "o","W","r","d"]。
      *
