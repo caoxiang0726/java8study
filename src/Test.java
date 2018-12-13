@@ -4,11 +4,8 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        String s = "DEPT_33";
-        String substring = s.substring("DEPT_".length());
-        System.out.println(substring);
-
-        System.out.println(Math.random());
+        List<Integer> integers = Arrays.asList(1, 2, 3);
+        integers.subList(0, 5);
 
 
     }
