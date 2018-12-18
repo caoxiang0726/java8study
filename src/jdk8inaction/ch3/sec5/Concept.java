@@ -2,7 +2,7 @@ package jdk8inaction.ch3.sec5;
 
 
 /**
- * 类型检查，类型推断
+ * 类型检查
  */
 public class Concept {
     /**
