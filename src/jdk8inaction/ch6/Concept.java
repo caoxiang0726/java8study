@@ -4,7 +4,7 @@ public class Concept {
     /**
      * 筛选和切片
      * 5.1.1 用谓词筛选
-     * .filter(Dish::isVegetarian)
+     * .myfilter(Dish::isVegetarian)
      *
      * .distinct()
      *

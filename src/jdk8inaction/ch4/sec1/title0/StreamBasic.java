@@ -11,7 +11,7 @@ import static java.util.stream.Collectors.toList;
 /**
  * 因为集合是数据结构，所以它的主要目的是以特定的时间/空间复杂度存储和访问元
  * 素（如ArrayList 与 LinkedList）。但流的目的在于表达计算，比如你前面见到的
- * filter、sorted和map。集合讲的是数据，流讲的是计算
+ * myfilter、sorted和map。集合讲的是数据，流讲的是计算
  */
 
 /**

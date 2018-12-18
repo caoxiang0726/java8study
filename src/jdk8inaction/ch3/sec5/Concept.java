@@ -1,9 +1,5 @@
 package jdk8inaction.ch3.sec5;
 
-import jdk8inaction.ch1.sec2.title2.Apple;
-
-import java.util.Comparator;
-import java.util.List;
 
 /**
  * 类型检查，类型推断
@@ -11,7 +7,7 @@ import java.util.List;
 public class Concept {
     /**
     List<Apple> greenApples =
-            filter(inventory, a -> "green".equals(a.getColor()));
+            myfilter(inventory, a -> "green".equals(a.getColor()));
     Lambda表达式有多个参数，代码可读性的好处就更为明显。例如，你可以这样来创建一个
     Comparator对象：
     Comparator<Apple> c =
