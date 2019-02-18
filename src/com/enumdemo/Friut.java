@@ -1,5 +1,9 @@
 package com.enumdemo;
 
+/**
+ * 相对常量定义类来说，
+ * 一个类的对象是有限且固定的，这种情况下我们使用枚举类就比较方便
+ */
 public enum Friut {
     APPLE(1), ORANGE(2), BANANA(3);
     /**
@@ -13,13 +17,26 @@ public enum Friut {
         this.code = code;
     }
 
+    /**
+     *
+     */
+    public static boolean inEnum(int code) {
+        Friut[] friuts = Friut.values();
+        for (Friut friut : friuts) {
+            if (friut.code == code){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
     public static void main(String[] args) {
         Friut[] friuts = Friut.values();
         for (Friut friut : friuts) {
-            System.out.println("friut.ordinal():"+friut.ordinal()
-                    +",friut.code:"+friut.code
-                    +",friut.name():"+friut.name());
+            System.out.println("friut.ordinal():" + friut.ordinal()
+                    + ",friut.code:" + friut.code
+                    + ",friut.name():" + friut.name());
             /**
              * friut.ordinal():0,friut.code:1,friut.name():APPLE
              * friut.ordinal():1,friut.code:2,friut.name():ORANGE
@@ -35,6 +52,8 @@ public enum Friut {
 //        System.out.println(Friut.valueOf("apple1"));//No enum constant com.enumdemo.Friut.apple1
         System.out.println(Friut.valueOf("APPLE"));//APPLE
         System.out.println(Friut.valueOf("APPLE").code);//1   和前面一样，那valueof()感觉没什么用
+
+        System.out.println(inEnum(3));//true
 
     }
 
